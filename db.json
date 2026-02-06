@@ -1,0 +1,571 @@
+{
+  "react": [
+    {
+      "id": "1",
+      "question": "What is React?",
+      "answer": "React is a library for building user interfaces.",
+      "description": "React is a JavaScript library developed by Facebook that is used to build UI with a component-based approach. React allows you to create user interfaces from individual pieces called components.",
+      "resources": [
+        "https://react.dev",
+        "https://react.dev/reference/react"
+      ],
+      "level": 1,
+      "completed": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "2",
+      "question": "What is JSX?",
+      "answer": "JSX is a syntax extension for JavaScript for React.",
+      "description": "JSX allows you to write HTML-like code in JavaScript, which is then transpiled into calls to `React.createElement`. It simplifies creating and visually representing component structure.",
+      "resources": [
+        "https://react.dev/learn/writing-markup-with-jsx"
+      ],
+      "level": 2,
+      "completed": false,
+      "editDate": "03.02.2025, 20:25"
+    },
+    {
+      "id": "3",
+      "question": "What is the main working principle of React?",
+      "answer": "React uses a Virtual DOM to optimize rendering.",
+      "description": "React supports the Virtual DOM concept — a representation of the real DOM in memory. When a component’s state changes, React compares the Virtual DOM with the previous state and updates only the changed elements on the page.",
+      "resources": [
+        "https://react.dev/learn/render-and-commit"
+      ],
+      "level": 2,
+      "completed": false,
+      "editDate": "03.02.2025, 19:01"
+    },
+
+        {
+      "id": "4",
+      "question": "How do you create a component in React?🍩",
+      "answer": "A component can be created as a function or a class.",
+      "description": "Functional components are functions that accept `props` and return JSX. Class components are classes that extend `React.Component` and implement a `render` method.",
+      "resources": [
+        "https://react.dev/learn/your-first-component"
+      ],
+      "level": 1,
+      "completed": false,
+      "editDate": "21.02.2025, 20:26"
+    },
+    {
+      "id": "5",
+      "question": "What are props in React?",
+      "answer": "Props are input parameters for components.",
+      "description": "Props (properties) are used to pass data from a parent component to a child component. They are immutable inside the component and help make components flexible and reusable.",
+      "resources": [
+        "https://react.dev/learn/passing-props-to-a-component"
+      ],
+      "level": 1,
+      "completed": false
+    },
+    {
+      "id": "6",
+      "question": "What is state in React?",
+      "answer": "State is the internal data of a component that can change.",
+      "description": "State is managed inside a component and is updated via `setState` in class components or `useState` in functional components. Changing state triggers a re-render.",
+      "resources": [
+        "https://react.dev/learn/state-a-components-memory"
+      ],
+      "level": 2,
+      "completed": true
+    },
+    {
+      "id": "7",
+      "question": "How does useState work in React?",
+      "answer": "useState is a hook for managing state in functional components.",
+      "description": "`useState` returns an array of two elements: the current state value and a function to update it. It is used to store and modify data in components.",
+      "resources": [
+        "https://react.dev/reference/react/useState"
+      ],
+      "level": 2,
+      "completed": true
+    },
+    {
+      "id": "8",
+      "question": "What is useEffect?",
+      "answer": "useEffect is a hook for managing side effects.",
+      "description": "The `useEffect` hook allows you to perform side effects such as API requests, subscriptions, and DOM manipulations. It runs after rendering and can depend on specific values.",
+      "resources": [
+        "https://react.dev/reference/react/useEffect"
+      ],
+      "level": 2,
+      "completed": true
+    },
+    {
+      "id": "9",
+      "question": "What is React Router?",
+      "answer": "React Router is a library for routing in React.",
+      "description": "React Router allows you to organize navigation in an application by providing components such as `BrowserRouter`, `Routes`, `Route`, and `Link`. It supports dynamic routes and nested structures.",
+      "resources": [
+        "https://reactrouter.com/en/main"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "10",
+      "question": "How can you optimize the performance of a React application?",
+      "answer": "Use React.memo, useMemo, useCallback, and rendering optimizations.",
+      "description": "To improve performance, you can use `React.memo` to memoize components, `useMemo` and `useCallback` to prevent unnecessary recreations of functions and data, as well as Code Splitting and Lazy Loading.",
+      "resources": [
+        "https://react.dev/learn/keeping-components-pure"
+      ],
+      "level": 3,
+      "completed": true
+    },
+    {
+      "id": "11",
+      "question": "What is Virtual DOM in React?",
+      "answer": "Virtual DOM is a representation of the real DOM in memory.",
+      "description": "Virtual DOM is a concept used by React to optimize UI updates. React compares the old and new Virtual DOM and changes only the modified elements in the real DOM.",
+      "resources": [
+        "https://react.dev/learn/render-and-commit"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "12",
+      "question": "How does React.memo work?",
+      "answer": "React.memo is an HOC for memoizing functional components.",
+      "description": "React.memo prevents a component from re-rendering if its props have not changed. This helps optimize performance by avoiding unnecessary re-renders.",
+      "resources": [
+        "https://react.dev/reference/react/memo"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "13",
+      "question": "What does useCallback do?",
+      "answer": "useCallback memoizes a function and returns the same instance between renders.",
+      "description": "useCallback is used to optimize performance by preventing functions from being recreated on every render when their dependencies do not change.",
+      "resources": [
+        "https://react.dev/reference/react/useCallback"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "14",
+      "question": "What does useMemo do?",
+      "answer": "useMemo memoizes a computed value.",
+      "description": "useMemo caches the result of a calculation between renders if its dependencies have not changed. This is useful for optimizing expensive computations.",
+      "resources": [
+        "https://react.dev/reference/react/useMemo"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "15",
+      "question": "How does event handling work in React?",
+      "answer": "React uses a synthetic event system.",
+      "description": "Events in React work through a `SyntheticEvent` wrapper that provides cross-browser compatibility and optimized handling.",
+      "resources": [
+        "https://react.dev/learn/responding-to-events"
+      ],
+      "level": 2,
+      "completed": true
+    },
+    {
+      "id": "16",
+      "question": "What are Portals in React?",
+      "answer": "Portals allow rendering children outside the parent DOM node.",
+      "description": "Using `ReactDOM.createPortal`, you can render elements into another DOM container while preserving the connection to the parent component.",
+      "resources": [
+        "https://react.dev/reference/react-dom/createPortal"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "17",
+      "question": "How can you implement lazy loading of components?",
+      "answer": "Use React.lazy and Suspense.",
+      "description": "React.lazy allows components to be loaded dynamically, and Suspense is used to show a fallback while loading.",
+      "resources": [
+        "https://react.dev/reference/react/lazy"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "18",
+      "question": "What is the Context API?",
+      "answer": "Context API is a mechanism for passing data without prop drilling.",
+      "description": "Context API is used for managing global application state, such as theme or language.",
+      "resources": [
+        "https://react.dev/reference/react/createContext"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "19",
+      "question": "How do you use useContext?",
+      "answer": "useContext allows you to consume context values.",
+      "description": "useContext accepts a context object and returns its current value, allowing data access without nested Consumer components.",
+      "resources": [
+        "https://react.dev/reference/react/useContext"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "20",
+      "question": "What are render props?",
+      "answer": "Render props are a pattern for passing functions as props.",
+      "description": "This pattern allows you to pass a JSX function as a prop to a component to flexibly control rendering.",
+      "resources": [
+        "https://react.dev/learn/render-props"
+      ],
+      "level": 3,
+      "completed": false
+    }
+
+    {
+      "id": "21",
+      "question": "How can you update state in a class component?",
+      "answer": "Using the setState method.",
+      "description": "setState accepts a new state object and updates the component, triggering a re-render. You can also pass a function to update state based on the previous state.",
+      "resources": [
+        "https://react.dev/reference/react/Component#setstate"
+      ],
+      "level": 1,
+      "completed": false
+    },
+    {
+      "id": "22",
+      "question": "How do you work with forms in React?",
+      "answer": "Use controlled and uncontrolled components.",
+      "description": "In controlled components, form state is stored in state. In uncontrolled components, it is stored in the DOM. useState, onChange, and refs are commonly used.",
+      "resources": [
+        "https://react.dev/learn/sharing-state-between-components"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "23",
+      "question": "How do you pass a ref to a child component?",
+      "answer": "Use forwardRef.",
+      "description": "React.forwardRef allows you to pass a ref into a child component to access its DOM element or instance.",
+      "resources": [
+        "https://react.dev/reference/react/forwardRef"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "24",
+      "question": "How do you use keys in lists?",
+      "answer": "Keys help React distinguish elements when rendering.",
+      "description": "Keys are used in lists to identify elements. They help React efficiently update lists and avoid unnecessary re-renders.",
+      "resources": [
+        "https://react.dev/learn/rendering-lists"
+      ],
+      "level": 1,
+      "completed": false
+    },
+    {
+      "id": "25",
+      "question": "What does Strict Mode do?",
+      "answer": "StrictMode helps find potential problems in code.",
+      "description": "StrictMode enables additional checks and warnings about unsafe lifecycle methods and other issues.",
+      "resources": [
+        "https://react.dev/reference/react/StrictMode"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "26",
+      "question": "How does useReducer work?",
+      "answer": "useReducer manages state through a reducer function.",
+      "description": "useReducer is useful for complex state. It accepts a reducer function and an initial state, returning the current state and a dispatch function.",
+      "resources": [
+        "https://react.dev/reference/react/useReducer"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "27",
+      "question": "How can you catch errors in React components?",
+      "answer": "Use Error Boundaries.",
+      "description": "Error Boundaries are components that implement componentDidCatch to prevent the entire app from crashing when a child throws an error.",
+      "resources": [
+        "https://react.dev/learn/error-handling"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "28",
+      "question": "What does the useRef hook do?",
+      "answer": "useRef creates a reference that persists between renders.",
+      "description": "useRef is used to access DOM elements or store mutable values without causing re-renders.",
+      "resources": [
+        "https://react.dev/reference/react/useRef"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "29",
+      "question": "How can you implement server-side rendering (SSR) in React?",
+      "answer": "Use Next.js or ReactDOMServer.",
+      "description": "SSR allows rendering React components on the server, improving SEO and loading speed.",
+      "resources": [
+        "https://nextjs.org/docs"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "30",
+      "question": "What are React Fragments?",
+      "answer": "Fragments allow grouping elements without adding extra nodes to the DOM.",
+      "description": "Fragments (`<> </>` or `React.Fragment`) are used to avoid unnecessary wrapper elements.",
+      "resources": [
+        "https://react.dev/reference/react/Fragment"
+      ],
+      "level": 1,
+      "completed": false
+    },
+    {
+      "id": "31",
+      "question": "How do you use useLayoutEffect?",
+      "answer": "useLayoutEffect runs synchronously after render but before the browser paints.",
+      "description": "It is used when you need to measure the DOM before it is displayed.",
+      "resources": [
+        "https://react.dev/reference/react/useLayoutEffect"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "32",
+      "question": "How does useImperativeHandle work?",
+      "answer": "useImperativeHandle lets you control child methods through a ref.",
+      "description": "It is used with forwardRef to expose internal methods to a parent component.",
+      "resources": [
+        "https://react.dev/reference/react/useImperativeHandle"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "33",
+      "question": "What is an HOC (Higher-Order Component)?",
+      "answer": "An HOC is a function that takes a component and returns a new component.",
+      "description": "HOCs are used to reuse logic such as authentication or data handling.",
+      "resources": [
+        "https://react.dev/learn/reusing-logic-with-custom-hooks"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "34",
+      "question": "How can you create global state in React?",
+      "answer": "Use Context API, Redux, or Zustand.",
+      "description": "Global state can be managed using Context API for simple cases, Redux for complex data, or Zustand as a lightweight alternative.",
+      "resources": [
+        "https://react.dev/learn/passing-data-deeply-with-context",
+        "https://redux.js.org"
+      ],
+      "level": 3,
+      "completed": true
+    },
+    {
+      "id": "35",
+      "question": "What is React Fiber?",
+      "answer": "React Fiber is a new rendering algorithm in React.",
+      "description": "React Fiber is a rewritten engine that improves performance and supports pausing and resuming rendering with prioritization.",
+      "resources": [
+        "https://react.dev/blog/2017/09/26/react-v16.0.html"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "36",
+      "question": "How does React Suspense work?",
+      "answer": "Suspense delays rendering until asynchronous operations finish.",
+      "description": "Suspense shows a fallback UI while data or components are loading.",
+      "resources": [
+        "https://react.dev/reference/react/Suspense"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "37",
+      "question": "What is Concurrent Mode in React?",
+      "answer": "Concurrent Mode is a set of features to improve responsiveness.",
+      "description": "It allows React to prioritize and interrupt rendering tasks.",
+      "resources": [
+        "https://react.dev/blog/2021/06/08/the-plan-for-react-18"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "38",
+      "question": "How do you use React DevTools?",
+      "answer": "React DevTools is a debugging tool for React apps.",
+      "description": "It allows you to inspect component trees, props, state, and performance.",
+      "resources": [
+        "https://react.dev/learn/react-developer-tools"
+      ],
+      "level": 1,
+      "completed": false
+    },
+    {
+      "id": "39",
+      "question": "What are React Server Components?",
+      "answer": "React Server Components are components rendered on the server.",
+      "description": "They reduce client bundle size and support async data fetching.",
+      "resources": [
+        "https://react.dev/blog/2020/12/21/data-fetching-with-react-server-components"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "40",
+      "question": "How do you use React with TypeScript?",
+      "answer": "Use TypeScript for static typing in React apps.",
+      "description": "TypeScript helps avoid errors by typing props, state, and hooks.",
+      "resources": [
+        "https://react.dev/learn/typescript"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "41",
+      "question": "What are React Hooks?",
+      "answer": "React Hooks are functions that let you use state and other React features.",
+      "description": "Hooks such as useState, useEffect, and useContext replace class-based logic.",
+      "resources": [
+        "https://react.dev/reference/react"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "42",
+      "question": "How do you use React with Redux?",
+      "answer": "Integrate React with Redux for global state management.",
+      "description": "React-Redux provides hooks like useSelector and useDispatch.",
+      "resources": [
+        "https://react-redux.js.org"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "43",
+      "question": "What is React Testing Library?",
+      "answer": "A tool for testing React components.",
+      "description": "It focuses on testing behavior rather than implementation.",
+      "resources": [
+        "https://testing-library.com/docs/react-testing-library/intro"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "44",
+      "question": "How do you use React with GraphQL?",
+      "answer": "Integrate via Apollo Client or Relay.",
+      "description": "These tools provide caching and state management for GraphQL.",
+      "resources": [
+        "https://www.apollographql.com/docs/react"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "45",
+      "question": "What is React Native?",
+      "answer": "React Native is a framework for building mobile apps using React.",
+      "description": "It compiles to native iOS and Android components.",
+      "resources": [
+        "https://reactnative.dev"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "46",
+      "question": "How do you use React with Webpack?",
+      "answer": "Webpack bundles React applications.",
+      "description": "It uses loaders and plugins such as Babel.",
+      "resources": [
+        "https://webpack.js.org/guides/getting-started"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "47",
+      "question": "What are React Error Boundaries?",
+      "answer": "Components that handle rendering errors.",
+      "description": "They use getDerivedStateFromError and componentDidCatch.",
+      "resources": [
+        "https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "48",
+      "question": "How do you use React with CSS-in-JS?",
+      "answer": "CSS-in-JS lets you write styles in JavaScript.",
+      "description": "Libraries like styled-components or Emotion are used.",
+      "resources": [
+        "https://styled-components.com"
+      ],
+      "level": 2,
+      "completed": false
+    },
+    {
+      "id": "49",
+      "question": "What is React Concurrent Rendering?",
+      "answer": "It allows React to work on multiple tasks simultaneously.",
+      "description": "It can pause and resume rendering for smoother UX.",
+      "resources": [
+        "https://react.dev/blog/2021/06/08/the-plan-for-react-18"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "50",
+      "question": "How do you use React with SSR and CSR?",
+      "answer": "Combine server-side and client-side rendering.",
+      "description": "Next.js is commonly used for this approach.",
+      "resources": [
+        "https://nextjs.org/docs"
+      ],
+      "level": 3,
+      "completed": false
+    },
+    {
+      "id": "e5c9",
+      "question": "Are you cool at React?",
+      "answer": "🍏 of course 🍏",
+      "description": "Because I really like React and practice with it a lot.",
+      "resources": [],
+      "level": 1,
+      "completed": false
+    }
+    ]   
+}
