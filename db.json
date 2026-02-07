@@ -40,7 +40,7 @@
 
         {
       "id": "4",
-      "question": "How do you create a component in React?🍩",
+      "question": "How do you create a component in React?",
       "answer": "A component can be created as a function or a class.",
       "description": "Functional components are functions that accept `props` and return JSX. Class components are classes that extend `React.Component` and implement a `render` method.",
       "resources": [

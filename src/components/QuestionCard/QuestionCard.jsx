@@ -8,7 +8,6 @@ export const QuestionCard = ({ card }) => {
   return (
     <div className={cls.card}>
       <div className={cls.cardLabel}>
-        Card Label
         <div>Level {card.level}</div>
         <div> {card.completed ? "Completed" : "Not Completed"}</div>
       </div>
