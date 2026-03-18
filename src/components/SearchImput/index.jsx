@@ -1,0 +1,1 @@
+export { SearchImput } from "./SearchImput";

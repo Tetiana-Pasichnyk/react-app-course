@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { QuestionCardList } from "../../components/QuestionCardList";
 import { Loader } from "../../components/Loader";
 import { useFetch } from "../../hooks/useFetch";
+import cls from "./HomePage.module.css";
+import { SearchImput } from "../../components/SearchImput";
 
 export const HomePage = () => {
   const [questions, setQuestions] = useState([]);
@@ -21,12 +23,13 @@ export const HomePage = () => {
   }, []);
   const searchValueHndler = (e) => {
     setSearchValue(e.target.value);
-  }; 
+  };
 
   return (
     <>
-      <input type="text" placeholder="Search questions..." value={searchValue} onChange={searchValueHndler} />
-
+      <div className={cls.controlContainer}>
+        <SearchImput value={searchValue} onChange={searchValueHndler} />
+      </div>
       {isLoading && <Loader />}
       {error && <div>{error}</div>}
       <QuestionCardList cards={questions} />
